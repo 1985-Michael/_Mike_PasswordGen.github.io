@@ -26,7 +26,7 @@
 
    output.innerHTML = slider.value;
 
-   slider.oninput = function(sliderRange) {
+   slider.oninput = function(_sliderRange) {
   
    output.innerHTML = this.value;
 
