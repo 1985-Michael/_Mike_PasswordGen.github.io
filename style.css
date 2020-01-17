@@ -1,0 +1,370 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #E9EbEE;
+    display: grid;
+    grid-template-columns: 1fr  1fr 2fr 2fr 1fr 1fr;
+    grid-template-rows: 100px 2fr 1fr;
+    grid-gap: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    
+}
+
+.header {
+    grid-column: 1/7;
+    font-size: 33px;
+    text-align: center;
+    margin-top: 30px;
+    color:slategrey;
+
+}
+
+.content {
+    grid-column: 2/6;
+    grid-row: 2;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 8px 14px -1px  rgb(133, 172, 202);;
+    box-sizing: border-box;
+    height: 480px;
+    padding: 17px;
+   
+}
+
+h2 {
+    font-size: 25px; 
+    color:slategrey;
+
+}
+
+#display {
+    
+    width: 100%;
+    text-align: center;
+    word-wrap: break-word;
+    box-shadow: inset 0 0 7px #b4bcf3;
+    font-size: 14px;
+    border-style: dotted;
+    border-color: lightsteelblue;
+    color: darkslategrey;
+    border-style: dashed;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;    
+    border-radius: 10px;
+    overflow: hidden;
+    resize: none;
+    text-overflow: ellipsis;
+
+}
+
+#sliderValue {
+   color: red;
+
+}
+#sliderRange {
+    width: 100%;
+    -webkit-appearance: none;
+    height: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.5;
+    -webkit-transition: .2s;
+    transition: .2s;
+    margin-top: 8px;
+    border-radius: 15px;
+    background-color: lightsteelblue;
+   
+}
+
+#sliderRange:hover {
+    opacity: 1;
+}
+
+#sliderRange::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; 
+    background: rgb(0, 120, 215);
+    cursor: pointer;
+}
+
+#sliderRange::-webkit-slider-thumb:hover {
+    box-shadow: 0 0 0 3px white,
+                0 0 0 6px  rgb(0, 120, 215);
+
+}
+
+#sliderRange:active::-webkit-slider-thumb {
+    box-shadow: 0 0 0 3px white,
+                0 0 0 6px  rgb(0, 120, 215);
+
+}
+
+p {
+  color: slategrey;
+  margin-top: 10px;
+
+}
+
+#button1 {
+    float: left;
+    padding: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+    margin-left: 38px;
+    color: white;
+    border: none;
+    background-color: rgb(182, 39, 39);
+    border-radius: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow:  0px 7px 0px 0px lightsteelblue;
+   
+}
+
+#button1:hover {
+    background-color:red
+
+}
+
+#button1:active {
+    box-shadow: 0 6px rgb(97, 95, 95);
+    transform: translateY(5px);
+  
+}
+
+#button2 {
+    float: right;
+    padding: 18px;
+    padding-left: 17px;
+    padding-right: 17px;
+    margin-top: 20px;
+    margin-right: 32px; 
+    color: white;
+    border: none;
+    background-color: slategray;
+    border-radius: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow:  0px 7px 0px 0px lightsteelblue;
+}
+
+#button2:hover {
+    background-color: rgb(70, 150, 230)}
+    
+#button2:active {
+    box-shadow: 0 6px rgb(97, 95, 95);
+    transform: translateY(5px);
+}
+
+@media screen and (max-width: 830px) {
+
+#display {
+    font-size: 14px;   
+
+}    
+
+.content {
+     height: 540px;
+
+}     
+       
+   
+#button1 {
+    float: left;
+    padding-left: 161px;
+    padding-right: 170px;
+    margin-left: 0px;
+    font-size: 25px;
+       
+  }
+
+#button2 {
+    float: right;
+    padding: 18px;
+    padding-left: 169px;
+    padding-right: 183px;
+    margin-right: 0px; 
+}
+
+}
+@media screen and (max-width: 695px) {
+   
+#display {
+        font-size: 13px;     
+}
+
+.content {
+    height: 540px;
+    
+}     
+           
+       
+#button1 {
+    float: left;
+    padding-left: 121px;
+    padding-right: 117px;
+    margin-left: 0px;
+    font-size: 25px;
+           
+}
+    
+#button2 {
+    float: right;
+    padding-left: 138px;
+    padding-right: 138px;
+    margin-right: 0px; 
+}
+    
+}
+@media screen and (max-width: 597px) {
+   
+#display {
+        font-size: 12px;     
+}
+.content {
+    height: 540px;
+        
+}     
+               
+           
+#button1 {
+    float: left;
+    padding-left: 81px;
+    padding-right: 84px;
+    margin-left: 0px;
+    font-size: 25px;
+               
+}
+        
+#button2 {
+    float: right;
+    padding-left: 91px;
+    padding-right: 95px;
+    margin-right: 0px; 
+}
+        
+}
+
+@media screen and (max-width: 475px) {
+   
+#display {
+    font-size: 11px; 
+}        
+.content {
+    height: 560px;
+            
+}     
+                   
+               
+#button1 {
+    float: left;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-left: 0px;
+    font-size: 25px;
+                   
+}
+            
+#button2 {
+    float: right;
+    padding-left: 67px;
+    padding-right: 57px;
+    margin-right: 0px; 
+}
+            
+}
+    @media screen and (max-width: 426px) {
+   
+#display {
+    font-size: 11px;
+}
+
+.content {
+    height: 570px;
+                
+}     
+                       
+                   
+#button1 {
+    float: left;
+    padding-left: 42px;
+    padding-right: 40px;
+    margin-left: 0px;
+                    font-size: 25px;
+                       
+}
+                
+#button2 {
+    float: right;
+    padding-left: 56px;
+    padding-right: 52px;
+    margin-right: 0px; 
+}
+                
+}
+
+@media screen and (max-width: 379px) {
+   
+#display {
+    font-size: 10px;
+}
+
+.content {
+    height: 570px;
+                    
+}     
+                           
+                       
+#button1 {
+    float: left;
+    padding-left: 27px;
+    padding-right: 28px;
+    margin-left: 0px;
+    font-size: 25px;
+                           
+    }
+                    
+#button2 {
+    float: right;
+    padding-left: 33px;
+    padding-right: 30px;
+    margin-right: 0px; 
+}
+                    
+}
+
+@media screen and (max-width: 320px) {
+   
+#display {
+    font-size: 10px;
+}
+
+.content {
+    height: 570px;
+                        
+}     
+                               
+                           
+#button1 {
+    float: left;
+    padding-left: 19px;
+    padding-right: 20px;
+    margin-left: 0px;
+    font-size: 25px;
+                               
+        }
+                        
+#button2 {
+    float: right;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-right: 0px; 
+}
+                        
+}
