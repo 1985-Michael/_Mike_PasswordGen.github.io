@@ -26,7 +26,7 @@ body {
     grid-row: 2;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 10px 8px 14px -1px  rgb(133, 172, 202);;
+    box-shadow: 10px 8px 14px -1px rgb(133, 172, 202);
     box-sizing: border-box;
     height: 480px;
     padding: 17px;
@@ -38,7 +38,12 @@ h2 {
     color:slategrey;
 
 }
+input {
+  display: flexbox;
+  word-break: break-all;
 
+
+}
 #display {
     
     width: 100%;
